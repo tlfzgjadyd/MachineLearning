@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <!-- 텐서플로우 라이브러리를 로딩 Load TensorFlow.js. This is required to use MobileNet. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+
+<!--아래는 우리가 사용할 mobilenet이라는 코드를 로딩 Load the MobileNet model. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+
+<!-- 식별하고싶은 이미지를 img태그로 표시 -->
+<img id="img" src="tlfzgjadyd.png"></img>
+
+<!-- 하지만 이 코드는 동작하지 않는다 직접 웹서버 장만해서 실행해야됨
+    아파치나 엔진x등의 기술을 활용해서 이점을 해결해야한다는데
+    open with live server 써도 잘돌아가길래 그냥 놔뒀음
+    이제 아래쪽의 script태그를 통해 이 이미지를 식별할거다-->
+
+
+<script>
+  // Notice there is no 'import' statement. 'mobilenet' and 'tf' is
+  // available on the index-page because of the script tag above.
+
+  const img = document.getElementById('img');
+  //img라는 태그를 통해 찾아온다
+
+  // Load the model.
+  /*아래에선 mobilenet모델을 로드하기 위해 load함수 사용하며
+    로딩이 끝날 경우 then 안에있는 함수를 호출하게 된다 
+    이떄 여기에선 model이라는 이름의 인자로 전달되었고
+    model이 가진 함수들중 classify라는 함수를 사용하게됨
+    classify작업이 끝날 경우 then 안에 있는 함수를 호출하고
+    이때 여기에선 predictions라는 이름의 인자를 전달받는다
+    그 결과를 출력함*/
+
+  mobilenet.load().then(model => { 
+    // Classify the image.
+    model.classify(img).then(predictions => {
+      console.log('Predictions: ');
+      console.log(predictions);
+    });
+  });
+  /* 어느정도 시간이 걸린 후 콘솔창을 열어보면 배열안에 3개의 객체가 들어있음
+  className : beaker일 확률이 0.89~정도 되고
+  className : pop bottle, soda bottle일 확률이 0.02~정도 되고
+  className : measuring sup일 확률이 0.00824정도 된다*/
+</script>
+
+</body>
+</html>
