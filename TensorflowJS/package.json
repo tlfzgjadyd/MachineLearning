@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@tensorflow/tfjs": "^2.8.2",
+    "@tensorflow/tfjs-node": "^2.8.2",
+    "@tensorflow/tfjs-node-gpu": "^2.8.2",
+    "mysql": "^2.18.1"
+  }
+}
