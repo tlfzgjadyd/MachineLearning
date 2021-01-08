@@ -6,13 +6,16 @@
  
     <!-- Import TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
-    <script src="./lec10_2results.js"></script>
+    <script src="../js/lec10_2results.js"></script>
 </head>
  
 <body>
     <script>
      
-        // 1. 과거의 데이터를 준비합니다. 
+        // 1. 과거의 데이터를 준비합니다.
+        //하지만 너무 길어서 lec10_2results.js로 뺀것이기에 여기선 따로 정의하지 않는다
+        //대신 var 원인과 결과에 보스톤_원인과 결과를 텐서자료형으로 바꿔서 대입시켜줌
+        
         var 원인 = tf.tensor(보스톤_원인);
         var 결과 = tf.tensor(보스톤_결과);
  

@@ -6,7 +6,7 @@
  
     <!-- Import TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
-    <script src="./lec10_boston.js"></script>
+    <script src="../js/lec10_1boston.js"></script>
 </head>
  
 <body>
@@ -51,7 +51,7 @@
             var 예측한결과 = model.predict(원인);
             예측한결과.print();
 
-            var weight = model.getWeights();
+            var weights = model.getWeights();
             weights[0].arraySync()
             //결과를 보니 방개수에 대한 열에서 가중치가 높았음 방값이 많은 영향을 미친다
  
