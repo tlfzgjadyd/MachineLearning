@@ -1,0 +1,5 @@
+판매량	온도	요일
+continuous	continuous	string
+		meta
+30.0	20.0	금
+42.0	21.0	토
