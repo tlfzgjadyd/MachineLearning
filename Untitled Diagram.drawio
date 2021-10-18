@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-10-18T21:29:38.916Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="ti0fITHXWUaHQCfcKMPy" version="15.5.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-18T21:40:05.876Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="53Zjdj4keUbpZT0020b-" version="15.5.5" type="github">
   <diagram id="TMS9jbsaMHsTkJlumN1A" name="Page-1">
-    <mxGraphModel dx="428" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1255" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="YwPC5Z9EbtwSBRtzv9r_-1" value="기준&lt;br&gt;gini =&amp;nbsp;&lt;br&gt;samples = 20&lt;br&gt;value = [n, m]&lt;br&gt;class=이번에 얻을거&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="YwPC5Z9EbtwSBRtzv9r_-1" value="Act?&lt;br&gt;gini =&amp;nbsp;&lt;br&gt;samples = 17&lt;br&gt;value = [, ]&lt;br&gt;class=이번에 얻을거" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="130" y="90" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YwPC5Z9EbtwSBRtzv9r_-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="YwPC5Z9EbtwSBRtzv9r_-11" target="YwPC5Z9EbtwSBRtzv9r_-9">
@@ -48,6 +48,9 @@
         </mxCell>
         <mxCell id="YwPC5Z9EbtwSBRtzv9r_-14" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="220" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YwPC5Z9EbtwSBRtzv9r_-15" value="Reason of root node : It could separate instances with low impurity than other&amp;nbsp;criteria" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="50" width="520" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
